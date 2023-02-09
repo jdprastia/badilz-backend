@@ -12,15 +12,15 @@ const flash = require('connect-flash');
 const mongoose = require('mongoose');
 
 // Connect Mongoo Local
-mongoose.connect('mongodb://127.0.0.1:27017/db_anggabadilz', err => {
-  if(err) throw err;
-  console.log('Connected to MongoDB')
-});
+// mongoose.connect('mongodb://127.0.0.1:27017/db_anggabadilz', err => {
+//   if(err) throw err;
+//   console.log('Connected to MongoDB')
+// });
 
 // Connect Mongoo Atlas
-// mongoose.connect('mongodb+srv://jerridwip:badilzproject@cluster0.6emcd.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://jerridwip:badilzproject@cluster0.d5wupqe.mongodb.net/db_anggabadilz?retryWrites=true&w=majority');
 
-// mongodb+srv://jerridwip:badilzproject@cluster0.6emcd.mongodb.net/?retryWrites=true&w=majority
+// mongodb+srv://jerridwip:badilzproject@cluster0.d5wupqe.mongodb.net/db_anggabadilz??retryWrites=true&w=majority
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
